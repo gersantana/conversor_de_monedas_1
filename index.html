@@ -7,27 +7,27 @@
 		<link rel="stylesheet" href="./assets/css/style.css" />
 	</head>
 	<body class="body_propiedades">
-        <div class="container">
-		 <h1>Conversor de monedas Nacional </h1>
-            <div class="conversor">
-                
-                <label for="monto_clp">Pesos CLP</label>
-                <input type="number" name="clp" id="monto_clp" min="1" placeholder="Ingrese el monto en CLP">
+		<div class="container">
+			<h1>Conversor de monedas Nacional</h1>
+			<div class="conversor">
+				<label for="monto_clp">Pesos CLP</label>
+				<input type="number" name="clp" id="monto_clp" min="1" placeholder="Ingrese el monto en CLP" />
 
-                <label class="label_select" for="select_moneda">Moneda a Convertir:</label>
-                <select name="" id="select_moneda">
-                    <option value="" selected>Selecione la Moneda</option>
-                    <option value="UF">UF</option>
-                    <option value="UTM">UTM</option>
-                    <option value="EU">EURO</option>
-                    <option value="USD">USD</option>
-                    <option value="IPC">IPC</option>
-                    <option value="BTC">BTC</option>
-                </select>
-                <button id="btn_convertir" type="submit">Convertir</button>
-                <p>...<span id="reusltado_conversion"></span></p>
-            </div>
-        </div>
+				<label class="label_select" for="select_moneda">Moneda a Convertir:</label>
+				<select name="" id="select_moneda">
+					<option valuevacio selected>Selecione la Moneda</option>
+					<option value="uf">UF</option>
+					<option value="utm">UTM</option>
+					<option value="euro">EURO</option>
+					<option value="dolar">USD</option>
+					<option value="bitcoin">BTC</option>
+					<option value="bb">ETH</option>
+				</select>
+				<button id="btn_convertir" type="submit">Convertir</button>
+				<p><span id="resultado_conversion">...</span></p>
+			</div>
+			<section id="grafico"></section>
+		</div>
 
 		<script src="./assets/js/main.js"></script>
 	</body>
