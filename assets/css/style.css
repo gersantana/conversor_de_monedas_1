@@ -9,12 +9,12 @@ body {
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
-    height: 80vh;
+    height: 100vh;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 .body_propiedades {
-    background-color: #141414;
+    background-color: #1d1a1a;
     color: white;
     display: flex;
     justify-content: center;
@@ -40,6 +40,7 @@ h1 {
     flex-direction: column;
     background-color: #434b5c;
     padding: 2rem;
+    border-radius: .5rem;
 }
 
 label {
@@ -52,11 +53,14 @@ input#monto_clp {
     height: 5rem;
     border-radius: .5rem;
     border: .1rem;
+    font-size: 2.5rem;
+    padding: 0  ;
+    text-align: center;
 }
 
 input::placeholder {
     text-align: center;
-    color:rgb(192, 192, 120);
+    color:rgb(165, 165, 111);
     font-size: 2rem;
     font-weight: bold;
 }
@@ -67,12 +71,16 @@ input::placeholder {
 
 select {
     text-align: center;
-    color:rgb(192, 192, 120);
+    color:rgb(165, 165, 111);
     height: 5rem;
     font-size: 2rem;
     font-weight: bold;
     border-radius: .5rem;
     border: .1rem;
+}
+
+select option{
+    color: #141414;
 }
 
 button#btn_convertir {
@@ -81,10 +89,17 @@ button#btn_convertir {
     height: 5rem;
     background-color: #2dbce7;
     color: white;
-    font-weight: bold;
     border: .1rem;
     border-radius: .5rem;
     font-size: 2rem;
+    font-weight: bold;
+    transition: all .3s ;
+}
 
-    max-width: 100%
+button#btn_convertir:hover {
+    background-color: #0fa5d3;
+    box-shadow: .2rem .2rem 1rem #000 ;
+    transform: scale(1.01);
+    border-radius: 1rem;
+    border: .2rem;
 }
