@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Conversor de monedas</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body class="body_propiedades">
+        <div class="container">
+		 <h1>Conversor de monedas Nacional </h1>
+            <div class="conversor">
+                
+                <label for="monto_clp">Pesos CLP</label>
+                <input type="number" name="clp" id="monto_clp" min="1" placeholder="Ingrese el monto en CLP">
+
+                <label class="label_select" for="select_moneda">Moneda a Convertir:</label>
+                <select name="" id="select_moneda">
+                    <option value="" selected>Selecione la Moneda</option>
+                    <option value="">ssd</option>
+                    <option value=""></option>
+                </select>
+                <button id="btn_convertir" type="submit">Convertir</button>
+                <p>...<span id="reusltado_conversion"></span></p>
+            </div>
+        </div>
+
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>

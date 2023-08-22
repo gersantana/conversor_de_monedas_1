@@ -1,0 +1,90 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*::after,::before{
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.body_propiedades {
+    background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 120rem;
+    padding: 1rem;
+
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: cursive;
+    border-bottom: #2dbce7 .2rem solid;
+    margin: 3rem 0;
+}
+
+.conversor {
+    display: flex;
+    flex-direction: column;
+    background-color: #434b5c;
+    padding: 2rem;
+}
+
+label {
+    font-size: 2.8rem;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+input#monto_clp {
+    height: 5rem;
+    border-radius: .5rem;
+    border: .1rem;
+}
+
+input::placeholder {
+    text-align: center;
+    color:rgb(192, 192, 120);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.label_select {
+    font-size: 2rem;
+}
+
+select {
+    text-align: center;
+    color:rgb(192, 192, 120);
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    border: .1rem;
+}
+
+button#btn_convertir {
+    margin: 2rem auto;
+    width: 100%;
+    height: 5rem;
+    background-color: #2dbce7;
+    color: white;
+    font-weight: bold;
+    border: .1rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+
+    max-width: 100%
+}
