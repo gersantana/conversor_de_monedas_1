@@ -14,7 +14,7 @@ btnConvertir.addEventListener("click", async () => {
         const data = await response.json();
 
         if (!data[monedaConvertir]) {
-            resultadoConversion.textContent = "Moneda no encontrada en la API";
+            resultadoConversion.textContent = "Moneda no disponible";
             return;
         } else if (montoEnClp <= 0) {
             resultadoConversion.textContent = `El monto de entrada de ser "SUPERIOR" a "0" `
